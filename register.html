@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="register.css" />
+
+    <title>Register</title>
+  </head>
+
+  <body>
+    <nav>
+      <form>
+        <a class="nav-btn" href="index.html">Go to Quiz</a>
+      </form>
+    </nav>
+
+    <div class="main-container">
+      <div class="container">
+        <div class="header">
+          <h2>
+            Create account <br />
+            <span>to save your progress</span>
+          </h2>
+        </div>
+        <form class="form" id="form">
+          <!-- class to group labels, inputs etc  -->
+          <div class="form-control">
+            <label class="form-label" for="username">Username</label>
+            <input type="text" placeholder="e.g., annsmith02" id="username" />
+            <!-- check icon -->
+            <i class="fas fa-check-circle"></i>
+            <!-- exclamation icon -->
+            <i class="fas fa-exclamation-circle"></i>
+            <!-- error msg -->
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="e.g., ann.smith@gmail.com" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="confirmPassword">Re-enter password</label>
+            <input type="password" id="confirmPassword" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="register.js"></script>
+  </body>
+</html>

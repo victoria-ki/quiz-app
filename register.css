@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  --success-color: #49796b;
+  --error-color: #e74c3c;
+  --clr-white: #fff;
+  --clr-lightgray: #f7f7f7;
+  --clr-mediumgray: #f0f0f0;
+  --clr-darkgray: #696969;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-btn {
+  position: fixed;
+  top: 2rem;
+  right: 1.23rem;
+  background-color: rgb(33, 37, 41);
+  border-radius: 0.25rem;
+  color: var(--clr-white);
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 7px 14px;
+  text-decoration: none;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--clr-white);
+  border-radius: 0.25rem;
+  border: 1px solid var(--clr-mediumgray);
+  width: 25rem;
+}
+
+.header {
+  border-bottom: 1px solid var(--clr-mediumgray);
+  background-color: var(--clr-lightgray);
+  padding: 1rem 2.5rem;
+}
+
+.header h2 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.header span {
+  font-size: 1.25rem;
+  color: var(--clr-darkgray);
+}
+
+.form {
+  padding: 1.25rem 2.5rem;
+}
+
+.form-control {
+  margin-bottom: 0.75rem;
+  /* space for an error msg */
+  padding-bottom: 1.25rem;
+  /* to absolutely position icons & error msg */
+  position: relative;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.form-control input {
+  display: block;
+  border: 2px solid var(--clr-mediumgray);
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 0.6rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 2.5rem;
+  right: 0.75rem;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  left: 0.5rem;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: var(--error-color);
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: var(--error-color);
+  font-weight: 600;
+}
+
+.form button {
+  background-color: #000000;
+  color: var(--clr-white);
+  font-size: 1.25rem;
+  font-family: inherit;
+
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  opacity: 75%;
+  width: 100%;
+}
+
+.form button:hover {
+  opacity: 100%;
+}

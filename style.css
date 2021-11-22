@@ -1,0 +1,52 @@
+.quiz {
+  background-image: url(img/quiz_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quiz-form {
+  width: 40%;
+  margin: auto;
+}
+
+.btn:focus {
+  cursor: pointer;
+  box-shadow: none !important;
+}
+
+/* modal styling */
+.modal-wrapper {
+  box-sizing: border-box;
+  position: fixed;
+  top: 5%;
+  right: 30%;
+  height: 50vh;
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 2rem;
+  background-color: rgb(236, 236, 236);
+  position: relative;
+  border: none;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-content p {
+  font-size: 1.5rem;
+}
+/* end of modal styling */
+
+.correct {
+  margin-left: 0.5rem;
+  color: #49796b;
+}
